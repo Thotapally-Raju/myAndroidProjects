@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Cu" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle"> @android:style/Animation.Dialog
+        </item>
+        </style>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E3D3A"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context=".MainActivity7">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/design_default_color_primary"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="TEXT TO VOICE"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Enter text"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/white"
+            app:endIconTint="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:id="@+id/textBox"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/error"
+        android:gravity="center"
+        android:textColor="@color/red"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:id="@+id/stop"
+                android:background="@drawable/stopback"/>
+        <Button
+            android:layout_margin="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/speak"
+            android:background="@drawable/buttonback"
+            android:layout_gravity="center"
+            android:text="speak"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

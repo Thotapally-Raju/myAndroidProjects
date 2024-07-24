@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity8">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:layout_gravity="center"
+        android:hint="Enter text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Please Wait"
+            android:gravity="center"
+            android:id="@+id/text"
+            android:layout_margin="25dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:layout_margin="25dp"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:layout_height="wrap_content"
+        android:text="submit"
+        android:background="@drawable/buttonback"
+        android:textColor="@color/white"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"/>
+
+
+</LinearLayout>
